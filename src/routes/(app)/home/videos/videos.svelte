@@ -14,7 +14,7 @@
 
 				<div class="flex w-full gap-4">
 					<div class="">
-						<a href="#">
+						<!-- <a href="#"> -->
 							<img
 								src="/trending/shiba coin.png"
 								alt="img"
@@ -29,7 +29,7 @@
 								</div>
 							</div>
 							<div class="text-sm text-gray-500">1 day ago</div>
-						</a>
+						<!-- </a> -->
 					</div>
 
 					<div class="flex flex-col max-w-[500px] gap-2">

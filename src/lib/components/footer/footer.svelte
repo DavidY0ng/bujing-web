@@ -1,19 +1,39 @@
-<div class="flex flex-col items-center max-h-[1400px] p-[100px] mx-auto bg-gradient-to-b from-black to-surface-900">
-    <div class="mb-5 text-transparent h2 bg-gradient-to-br from-primary-500 to-secondary-500 bg-clip-text box-decoration-clone">
-        BUJING - 布鲸社区
+<script>
+
+	import Icon from "@iconify/svelte";
+
+</script>
+
+<div class="flex flex-col items-center max-h-[1400px] p-[100px] mx-auto bg-gradient-to-b from-surface-900 to-black">
+    <div class="mb-5 text-transparent h2 bg-gradient-to-br from-secondary-500 to-tertiary-500 bg-clip-text box-decoration-clone">
+        <!-- Stay Connected -->
     </div>
-    <div class="mb-5 text-lg text-center">
-        <p>
-            专注于社交结交朋友的DAO社区，聚集一群志同道合的伙伴聊天吹水、探讨圈内最新动态、分享投资经验和技巧。
-        </p>
-        <p>
-            无论新手还是老手，只要对币圈感兴趣，都欢迎加入布鲸社区，共同创造一个有温度的圈子。
-        </p>
+    <div class="mb-5 text-base text-lg text-center">
+        <div class="flex justify-around w-[200px] py-5">
+            <a href='https://t.me/bujingpublic' target='blank'>
+                <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                    <Icon icon="mingcute:telegram-fill" width="1.4em" height="1.4em" />
+                </button>
+            </a>
+            
+            
+            <a href='https://twitter.com/bujingmalaysia' target='blank'>
+                <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                    <Icon icon="ri:twitter-x-fill" width="1.4em" height="1.4em" />
+                </button>
+            </a>
+            
+            <a href='https://www.facebook.com/groups/bujing' target='blank'>
+                <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                    <Icon icon="ri:facebook-fill" width="1.4em" height="1.4em" />
+                </button>
+            </a>
+            
+        </div>
     </div>
     
-    <div class="text-gray-600">
+    <div class="text-center text-gray-600">
         © 2024 BUJING. All rights reserved
     </div>
     
 </div>
-

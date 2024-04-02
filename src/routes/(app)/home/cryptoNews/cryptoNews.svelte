@@ -14,11 +14,11 @@
 			<div transition:fly={{ y: 50, duration: 1200, delay: 200 }}>
 				<div class="flex justify-between">
 					<div class="mb-8 font-bold h2">CRYPTO NEWS</div>
-					<a class="flex text-primary-500 hover:underline" href="#"> More from Crypto News > </a>
+					<!-- <a class="flex text-primary-500 hover:underline" href="#"> More from Crypto News > </a> -->
 				</div>
 
 				<div class="grid grid-cols-4 gap-4">
-					<a class="" href="#">
+					<!-- <a class="" href="#"> -->
 						<div class="pb-5">
 							<img
 								src="/trending/shiba coin.png"
@@ -37,7 +37,7 @@
 
 							<div class="text-xs text-gray-500">2 weeks ago</div>
 						</div>
-					</a>
+					<!-- </a> -->
 
 					<div>
 						<div class="pb-5">

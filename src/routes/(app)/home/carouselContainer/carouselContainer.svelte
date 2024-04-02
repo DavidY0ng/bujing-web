@@ -1,187 +1,237 @@
-<script lang='ts'>
-    // import { AppShell } from '@skeletonlabs/skeleton';
-    import Icon from '@iconify/svelte';
-    import IntersectionObserver from "svelte-intersection-observer"
-    import { fly } from "svelte/transition"
-    import { fade } from 'svelte/transition';
-    import Carousel from 'svelte-carousel';
-    import { browser } from '$app/environment';
+<script lang="ts">
+	// import { AppShell } from '@skeletonlabs/skeleton';
+	import Icon from '@iconify/svelte';
+	import IntersectionObserver from 'svelte-intersection-observer';
+	import { fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
+	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
+	import { browser } from '$app/environment';
 
-    let node:any;
-    const socialImg = [1,2,3,4,5,6,7]
-    const articleInfos = [
-        {
-            img: "1",
-            title: "CRYPTO ON THE RISE",
-            subtitle: "Understanding crypto bull market.",
-            author: "David Hoffman",
-            day: "1 day ago"
-        },
-        {
-            img: "2",
-            title: "CRYPTO ON THE RISE",
-            subtitle: "hello",
-            author: "William Pester",
-            day: "1 day ago"
-        },
-        {
-            img: "3",
-            title: "Why buy",
-            subtitle: "hello",
-            author: "David Hoffman",
-            day: "1 day ago"
-        }
-    ]
+	let node: any;
+	const socialImg = [1, 2, 3, 4, 5, 6, 7];
+	const articleInfos = [
+		{
+			img: '1',
+			title: 'CRYPTO ON THE RISE',
+			subtitle: 'Understanding crypto bull market.',
+			author: 'David Hoffman',
+			day: '1 day ago'
+		},
+		{
+			img: '2',
+			title: 'CRYPTO ON THE RISE',
+			subtitle: 'hello',
+			author: 'William Pester',
+			day: '1 day ago'
+		},
+		{
+			img: '3',
+			title: 'Why buy',
+			subtitle: 'hello',
+			author: 'David Hoffman',
+			day: '1 day ago'
+		}
+	];
 
-    const latestInfos = [
-        {
-            title: "金色电音节",
-            category: "活动",
-            time: '3月23日',
-            href:'https://twitter.com/bujingmalaysia/status/1767513240081490019',
-            signup: 'https://jinse.cn/blockchain/3677157.html'
-        },
-        {
-            title: "Bitcoin's $70,000 Question",
-            category: "TODAY IN MARKETS",
-            time: '1 day ago'
-        },
-        {
-            title: "When will Altcoin Season Arrive?",
-            category: "ANALYSIS",
-            time: '2 days ago'
-        },
-        {
-            title: "When will Altcoin Season Arrive?",
-            category: "ANALYSIS",
-            time: '2 days ago'
-        }
-    ]
+	const latestInfos = [
+		{
+			title: '金色电音节',
+			category: '活动',
+			time: '3月23日',
+			href: 'https://twitter.com/bujingmalaysia/status/1767513240081490019',
+			signup: 'https://jinse.cn/blockchain/3677157.html'
+		},
+		{
+			title: "Bitcoin's $70,000 Question",
+			category: 'TODAY IN MARKETS',
+			time: '1 day ago'
+		},
+		{
+			title: 'When will Altcoin Season Arrive?',
+			category: 'ANALYSIS',
+			time: '2 days ago'
+		},
+		{
+			title: 'When will Altcoin Season Arrive?',
+			category: 'ANALYSIS',
+			time: '2 days ago'
+		}
+	];
 
-    const enlarge = () => {
-        
-    }
-					             
+	const options = {
+		rewind: true,
+		perPage: 1,
+		gap: '1rem',
+		type: 'loop',
+		autoplay: true,
+		arrows: false,
+		pagination: false,
+		speed: 1500,
+		breakpoints: {
+			768: {}
+		}
+	};
+
+	const enlarge = () => {};
 </script>
 
-<div class="flex gap-5">
-    <div class="w-[75%]">
-        {#if browser}
-            <Carousel 
-                arrows={false} 
-                autoplay={true}
-                pauseOnFocus = {true}>
-            {#each socialImg as img}
-            <div class="">
-                    <div class="flex justify-center rounded-xl">
-                        <img 
-                        src="/social/{img}.jpeg" 
-                        alt='social {img}'
-                        class="object-contain w-[1100px] h-[500px] rounded-xl">
-                    </div>
-                    
-                <!-- <div class="p-4 max-w-500px">
-                    <div class="mb-2 font-bold h1">
-                        {info.title}
-                    </div>
-                    <div class="mb-4 h3">
-                        {info.subtitle}
-                    </div>
-                    <div class="flex mb-3 text-sm">
-                        <div class="pr-3">
-                            {info.author}
-                        </div>
-                        <div class="text-gray-400">
-                            {info.day}
-                        </div>
-                    </div>
-                    <button class="font-semibold text-black transition bg-white btn hover:bg-primary-500 hover:text-white">
-                        READ ARTICLE
-                    </button>
-                    
-                </div> -->
-            </div>
-            {/each}
-            </Carousel>
-        {/if}        
-    </div>
-    
-    <div class="flex flex-col gap-4">
-        <!-- latest news -->
-        <div class="h-full p-4 border rounded-2xl border-secondary-800">
-            <div class="mb-5 text-xl font-bold">
-                <div class="h-[100px] w-[200px] mr-5 items-center flex ">
-                    <img src='/logo/whale name.png' alt='bujing' class="">
-                </div>
-            </div>
-            <IntersectionObserver element={node} let:intersecting once>
-                <div bind:this={node} class="">
-                    
-                    <div class="flex flex-col gap-2"  >
-                        <p class="text-lg font-semibold">
-                            八卦 日常生活，了解各行各业的发展，关注币圈信息及知识
-                        </p>
-                    </div>
-                   
-                </div>
-               
-            </IntersectionObserver>
-            <hr class="my-5">
-            
-            <div class="mb-5 text-gray-400">
-                社交平台
-            </div>
+<IntersectionObserver element={node} let:intersecting once>
+	<div bind:this={node} class="">
+		{#if intersecting}
+			<div class="flex justify-center mt-[20px]">
+				<div class=" w-full max-w-[1400px]">
+					<div class="flex flex-col gap-5 lg:flex-row bg-surface-900">
+						<div class="lg:w-[150%] cursor-grab">
+							<div transition:fly={{ x: -80, duration: 1200, delay: 1400 }}>
+								<Splide {options} hasTrack={false}>
+									<SplideTrack>
+										{#each socialImg as img}
+											<SplideSlide>
+												<div class="">
+													<div class="flex justify-center rounded-xl">
+														<img
+															src="/social/{img}.jpeg"
+															alt="social {img}"
+															class="object-cover w-full md:h-[500px] h-[300px] rounded-xl"
+														/>
+													</div>
+												</div>
+											</SplideSlide>
+										{/each}
+									</SplideTrack>
+									<div class="splide__progress">
+										<div class="splide__progress__bar"></div>
+									</div>
+								</Splide>
+							</div>
+						</div>
 
-            <div class="flex justify-around w-[200px]">
-				<a href='https://t.me/bujingpublic' target='blank'>
-					<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-						<Icon icon="mingcute:telegram-fill" width="1.2em" height="1.2em" />
-					</button>
-				</a>
-				
-				
-				<a href='https://twitter.com/bujingmalaysia' target='blank'>
-					<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-						<Icon icon="ri:twitter-x-fill" width="1.2em" height="1.2em" />
-					</button>
-				</a>
-				
-				<a href='https://www.facebook.com/groups/bujing' target='blank'>
-					<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-						<Icon icon="ri:facebook-fill" width="1.2em" height="1.2em" />
-					</button>
-				</a>
+						<div class="flex flex-col gap-4">
+							<!-- latest news -->
+							<div
+								class="flex flex-col justify-between h-full p-4 border rounded-2xl border-secondary-800"
+							>
+								<div>
+									<div class="flex justify-center mb-5 text-xl font-bold">
+										<div class="h-full w-[200px] mr-5 items-center flex">
+											<div transition:fly={{ y: -80, duration: 1200, delay: 400 }}>
+												<img src="/logo/whale name.png" alt="bujing" class="w-full h-full" />
+											</div>
+										</div>
+									</div>
+
+									<div transition:fly={{ y: -80, duration: 1200, delay: 600 }}>
+										<div class="mb-5 font-bold underline h3 text-secondary-400">
+											优质社区由优秀的人群组成
+										</div>
+									</div>
+
+									<div class="flex flex-col text-xl">
+										<div transition:fly={{ y: -80, duration: 1200, delay: 800 }}>
+											<p class="mb-5">八卦 日常生活，了解各行各业的发展，关注币圈信息及知识。</p>
+
+											<div transition:fly={{ y: -80, duration: 1200, delay: 1000 }}>
+												<p>
+													本社区 NFT
+													没有任何炒作空间，买了也不升值，所以没有打算加入社区的人就别搞了。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<hr class="my-3" />
+
+									<div transition:fly={{ y: 80, duration: 1200, delay: 400 }}>
+										<div class="mb-5 text-lg font-bold text-center text-gray-100">社交平台</div>
+
+										<div class="flex justify-center gap-4">
+											<a href="https://t.me/bujingpublic" target="blank">
+												<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+													<Icon icon="mingcute:telegram-fill" width="1.2em" height="1.2em" />
+												</button>
+											</a>
+
+											<a href="https://twitter.com/bujingmalaysia" target="blank">
+												<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+													<Icon icon="ri:twitter-x-fill" width="1.2em" height="1.2em" />
+												</button>
+											</a>
+
+											<a href="https://www.facebook.com/groups/bujing" target="blank">
+												<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+													<Icon icon="ri:facebook-fill" width="1.2em" height="1.2em" />
+												</button>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- sponsor -->
+							<!-- <div class="p-4 border border-secondary-800 rounded-2xl">
+                    <div class="mb-5 text-sm font-semibold text-gray-500">
+                        社交平台
+                    </div>
+        
+                    <div class="flex justify-around w-[200px]">
+                        <a href='https://t.me/bujingpublic' target='blank'>
+                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                                <Icon icon="mingcute:telegram-fill" width="1.2em" height="1.2em" />
+                            </button>
+                        </a>
+                        
+                        
+                        <a href='https://twitter.com/bujingmalaysia' target='blank'>
+                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                                <Icon icon="ri:twitter-x-fill" width="1.2em" height="1.2em" />
+                            </button>
+                        </a>
+                        
+                        <a href='https://www.facebook.com/groups/bujing' target='blank'>
+                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
+                                <Icon icon="ri:facebook-fill" width="1.2em" height="1.2em" />
+                            </button>
+                        </a>
+                        
+                    </div>
+                    <div class="flex items-center">
+                        <div class="h-[100px] w-[100px] mr-5 items-center flex">
+                            <img src='/logo/whale.png' alt='bujing' class="w-40 rounded-full h-35">
+                        </div>
+                        <div>
+                            <a href='#' class="anchor">BUJING</a>
+                            <span>
+                                - Empowered by BUJING society
+                            </span>
+                        </div>
+                    </div>
+                    <div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-1 ">
+                        <a class="logo-item variant-filled-secondary" href='https://t.me/bujingpublic' target='blank' >
+                            <span><Icon icon="mingcute:telegram-fill" width="1.9em" height="1.9em" /></span>
+                            <span>Skeleton</span>
+                        </a>
+                        <a class="logo-item variant-filled-secondary" href='https://twitter.com/bujingmalaysia' target='blank'>
+                            <span><Icon icon="ri:twitter-x-fill" width="1.9em" height="1.9em" /></span>
+                            <span>Skeleton</span>
+                        </a>
+            
+                        <a class="logo-item variant-filled-secondary"href='https://www.facebook.com/groups/bujing' target='blank'>
+                            <span><Icon icon="ri:facebook-fill" width="1.9em" height="1.9em" /></span>
+                            <span>Skeleton</span>
+                        </a>
+                      
+                    </div>
+                </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		{:else}
+			<div class="h-[503px]">
 				
 			</div>
-            
-        </div>
-    
-        <!-- sponsor -->
-        <!-- <div class="p-4 border border-gray-800 rounded-2xl">
-            <div class="mb-5 text-sm font-semibold text-gray-200">
-                社交平台
-            </div>
-            <div class="flex items-center">
-                <div class="h-[100px] w-[100px] mr-5 items-center flex">
-                    <img src='/logo/whale.png' alt='bujing' class="w-40 rounded-full h-35">
-                </div>
-                <div>
-                    <a href='#' class="anchor">BUJING</a>
-                    <span>
-                        - Empowered by BUJING society
-                    </span>
-                </div>
-            </div>
-        </div> -->
-
-        
-    </div>
-    
-    
-</div>
-
-
-<style>
-
-</style>
-
+		{/if}
+	</div>
+</IntersectionObserver>

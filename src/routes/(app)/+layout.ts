@@ -3,8 +3,8 @@ import { goto } from '$app/navigation';
 
 export const load = async () => {
 
-		if (browser) {
-			goto('/home');
-		}
+		// if (browser) {
+		// 	goto('/home');
+		// }
 	return {};
 };
