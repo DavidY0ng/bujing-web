@@ -26,7 +26,7 @@
 		<!-- <IntersectionObserver element={node} let:intersecting once>
 			<div bind:this={node}>
 				{#if intersecting} -->
-					<div transition:fly={{ y: -80, duration: 1200, delay: 200 }}>
+					<div transition:fly={{ y: -80, duration: 1200, delay: 200 }} class="text-white">
 						<div class="mb-5 font-bold h1">过去活动</div>
 						<div class="h3 mb-10 md:w-[70%]">
 							浏览我们曾举办的精彩活动，回顾过往时光，获得灵感。
@@ -59,7 +59,7 @@
 										</div>
 										<a href={data.href} target="_blank">
 											<button
-												class="absolute text-white bg-surface-800 bottom-5 btn z-99 hover:variant-filled-primary hover:dark:text-white left-5"
+												class="absolute text-white bg-surface-800 bottom-5 btn z-99 hover:variant-filled-primary hover:text-white left-5"
 											>
 												浏览
 											</button>
@@ -70,7 +70,7 @@
 									<!-- svelte-ignore a11y-no-static-element-interactions -->
 									<div
 										on:click={() => onExpand(data.id)}
-										class="card md:h-[400px] md:w-[200px] w-full h-[100px] rounded-3xl relative shadow-md cursor-pointer"
+										class="card md:h-[400px] md:w-[200px] w-full h-[100px] rounded-3xl relative shadow-md cursor-pointer bg-surface-800"
 									>
 										<img
 											src="assets/img/pastActivity/{data.img}"

@@ -9,7 +9,7 @@
         <!-- Stay Connected -->
     </div>
     <div class="mb-5 text-base text-lg text-center">
-        <div class="flex justify-around w-[200px] py-5">
+        <div class="flex justify-around w-[200px] py-5 text-white">
             <a href='https://t.me/bujingpublic' target='blank'>
                 <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
                     <Icon icon="mingcute:telegram-fill" width="1.4em" height="1.4em" />

@@ -1,5 +1,5 @@
 <script>
-	import { LightSwitch } from '@skeletonlabs/skeleton';
+	// import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { scrollToSection } from '$lib/store/store';
 	import Icon from '@iconify/svelte';
@@ -45,7 +45,7 @@
 
 </AppBar> -->
 
-<div class="fixed w-full shadow-md dark:variant-glass-primary bg-surface-100">
+<div class="fixed w-full shadow-md variant-glass-primary">
 	<div class="max-w-[1400px] md:py-2 md:px-1 p-3 mx-auto">
 		<div class="flex justify-between">
 			<div class="flex">
@@ -81,7 +81,7 @@
                             </div>
                             <input type="search" placeholder="Search" class="p-1" />
                         </div> -->
-					<div class="flex justify-between md:w-[150px] gap-5 h4 font-bold">
+					<div class="flex justify-between md:w-[150px] gap-5 h4 font-bold text-white">
 						<!-- <a
 							href="#past-events"
 							class="hover-underline-animation"

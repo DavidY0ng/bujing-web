@@ -30,7 +30,7 @@
 </script>
 <div class="flex justify-center">
     <div class="max-w-[1400px] w-full md:pb-[150px] pt-[100px]">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-white">
             <div class="mb-10 font-bold h1">我们的合作伙伴</div>
             <div class="mb-10 text-center md:w-[70%] text-xl">
                 我们的合作伙伴是我们的可靠盟友，与我们密切合作，共同实现共同目标，促进共同成长和创新。
@@ -41,7 +41,7 @@
         <div class="flex flex-col justify-center gap-5 md:flex-row">
             {#each partnersData as data}
                 
-                <div class="p-5 card hover:scale-105 lg:w-[25%] transition ">
+                <div class="p-5 card hover:scale-105 lg:w-[25%] transition bg-surface-800">
                     <a href={data.href} target='blank'>
                         <div class="flex justify-center">
                             <img src="assets/img/partners/{data.img}" alt="1" class="h-[200px] w-[400px] mb-3 object-cover rounded-md" />
@@ -50,7 +50,7 @@
     
                         <div class="flex flex-col justify-between h-[220px]">
                             <div class="">
-                                <div class="mb-5 h3">
+                                <div class="mb-5 text-white h3">
                                     {data.title}
                                 </div>
                 

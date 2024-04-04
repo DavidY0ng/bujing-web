@@ -41,7 +41,7 @@
 	];
 </script>
 
-<div class="flex justify-center w-full bg-[url('/assets/img/milestone/1.jpg')] dark:text-black bg-no-repeat bg-cover">
+<div class="flex justify-center w-full bg-[url('/assets/img/milestone/1.jpg')] text-black bg-no-repeat bg-cover">
 	<div class="py-20 md:max-w-[1400px] w-full">
 		<IntersectionObserver element={node} let:intersecting once>
 			<div bind:this={node}>
@@ -74,7 +74,7 @@
 										duration: 500,
 										delay: 700 * index
 									}}
-									class="md:w-[30%] w-[70%] p-[1.5em] shadow-lg card dark:bg-secondary-800 absolute {index % 2 === 0
+									class="md:w-[30%] w-[70%] p-[1.5em] shadow-lg card bg-secondary-800 absolute {index % 2 === 0
 										? 'md:left-[14%]  left-[25%] '
 										: 'md:right-[14%] right-[5%]'} md:top-[15%] top-[25%] "  
 								>

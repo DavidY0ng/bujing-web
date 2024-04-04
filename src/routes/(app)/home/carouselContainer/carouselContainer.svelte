@@ -126,7 +126,7 @@
 										</div>
 									</div>
 
-									<div class="flex flex-col text-xl">
+									<div class="flex flex-col text-xl text-white">
 										<div transition:fly={{ y: -80, duration: 1200, delay: 800 }}>
 											<p class="mb-5">八卦 日常生活，了解各行各业的发展，关注币圈信息及知识。</p>
 
@@ -141,12 +141,12 @@
 								</div>
 
 								<div>
-									<hr class="my-3" />
+									<hr class="my-3 !border-gray-700" />
 
 									<div transition:fly={{ y: 80, duration: 1200, delay: 400 }}>
-										<div class="mb-5 text-lg font-bold text-center text-gray-100">社交平台</div>
+										<div class="mb-5 text-lg font-bold text-center text-gray-500">社交平台</div>
 
-										<div class="flex justify-center gap-4">
+										<div class="flex justify-center gap-4 text-white">
 											<a href="https://t.me/bujingpublic" target="blank">
 												<button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
 													<Icon icon="mingcute:telegram-fill" width="1.2em" height="1.2em" />
