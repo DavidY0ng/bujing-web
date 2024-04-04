@@ -2,7 +2,6 @@
     import IntersectionObserver from "svelte-intersection-observer"
     import { fly } from "svelte/transition"
     import activity_data from './activity-data.json'
-    import Carousel from 'svelte-carousel';
     import { browser } from '$app/environment';
     
     let node: any
@@ -14,11 +13,7 @@
             <div class="mb-8 font-bold text-center h2">
                 过去活动
             </div>
-            <Carousel
-                particlesToShow={4}
-                particlesToScroll={1}
-                dots={false}
-               >
+           <!-- splide suppose to be here -->
             <!-- <div class="grid grid-cols-4 gap-4 " > -->
                 {#if browser}
                 
@@ -49,7 +44,7 @@
                 {/if}
                 
             <!-- </div> -->
-            </Carousel>
+
                 
 
         </div>

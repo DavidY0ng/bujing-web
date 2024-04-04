@@ -62,9 +62,9 @@
 						<div class="hidden xl:block absolute top-0 flex left-[64%]">
 							{#if intersecting}
 								<img
-									src="assets/img/aboutUs/2.jpeg"
+									src="assets/img/aboutUs/5.jpeg"
 									alt="1"
-									class="h-[240px] w-[190px] object-cover object-left"
+									class="h-[240px] w-[190px] object-cover object-right"
 									transition:fly={{
 										y: -80,
 										duration: 1200,
