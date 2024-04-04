@@ -7,7 +7,7 @@
 </script>
 
 <div class="w-full bg-black">
-	<div class="p-[200px] bg-local bg-cover bg-[url('/claimable/claimable_backdrop.jpg')]">
+	<div class="p-[200px] bg-local bg-cover bg-[url('/assets/img/claimable/claimable_backdrop.jpg')]">
 		<div class="flex flex-col items-center">
 			<div class="h1 text-[80px] p-10">
 				<IntersectionObserver element={node} let:intersecting once>

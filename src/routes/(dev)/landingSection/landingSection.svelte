@@ -12,7 +12,7 @@
 			<div class=" w-full max-w-[1400px]">
 				<div class="relative">
 					<div class="absolute">
-						<img src="/logo/whale name.png" alt="logo" class="" />
+						<img src="assets/img/logo/whale name.png" alt="logo" class="" />
 					</div>
 				</div>
 

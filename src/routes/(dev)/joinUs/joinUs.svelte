@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { onDestroy, onMount } from 'svelte';
-	import Typed from 'typed.js';
+	// import Typed from 'typed.js';
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import { fly } from 'svelte/transition';
 
