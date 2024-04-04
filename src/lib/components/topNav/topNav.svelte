@@ -49,10 +49,10 @@
 	<div class="max-w-[1400px] md:py-2 md:px-1 p-3 mx-auto">
 		<div class="flex justify-between">
 			<div class="flex">
-				<div class="text-[25px] font-bold deciratuib-primary-500 mr-10">
+				<div class="text-[25px] font-bold mr-10">
 					<div class="md:h1 text-[35px]">
 						<div>
-							<img src="assets/img/logo/whale.png" alt="whale logo" class="h-[40px] w-[40px]" />
+							<img src="assets/img/logo/whale name.png" alt="whale logo" class="h-[60px] w-[130px]" />
 						</div>
 					</div>
 				</div>
