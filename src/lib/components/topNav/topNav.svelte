@@ -52,7 +52,7 @@
 				<div class="text-[25px] font-bold deciratuib-primary-500 mr-10">
 					<div class="md:h1 text-[35px]">
 						<div>
-							<img src="/logo/whale.png" alt="whale logo" class="h-[40px] w-[40px]" />
+							<img src="assets/img/logo/whale.png" alt="whale logo" class="h-[40px] w-[40px]" />
 						</div>
 					</div>
 				</div>

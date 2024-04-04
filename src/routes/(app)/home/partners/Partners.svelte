@@ -44,7 +44,7 @@
                 <div class="p-5 card hover:scale-105 lg:w-[25%] transition ">
                     <a href={data.href} target='blank'>
                         <div class="flex justify-center">
-                            <img src="/partners/{data.img}" alt="1" class="h-[200px] w-[400px] mb-3 object-cover rounded-md" />
+                            <img src="assets/img/partners/{data.img}" alt="1" class="h-[200px] w-[400px] mb-3 object-cover rounded-md" />
                         </div>
                         
     

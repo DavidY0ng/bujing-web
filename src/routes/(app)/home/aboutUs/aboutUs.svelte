@@ -30,7 +30,7 @@
 
 <div class="relative flex justify-center">
 	<img
-		src="/aboutUs/bg1.jpg"
+		src="assets/img/aboutUs/bg1.jpg"
 		use:filter={'#BlueNight'}
 		alt="bg"
 		class=" object-cover opacity-20 w-full md:h-[800px] h-[550px]"
@@ -47,7 +47,7 @@
 						<div class="flex justify-center lg:absolute lg:bottom-0">
 							{#if intersecting}
 								<img
-									src="/aboutUs/1.jpeg"
+									src="assets/img/aboutUs/1.jpeg"
 									alt="1"
 									class="md:h-[500px] lg:w-[420px] w-full h-[250px] object-cover object-top"
 									transition:fly={{
@@ -62,7 +62,7 @@
 						<div class="hidden xl:block absolute top-0 flex left-[64%]">
 							{#if intersecting}
 								<img
-									src="/aboutUs/2.jpeg"
+									src="assets/img/aboutUs/2.jpeg"
 									alt="1"
 									class="h-[240px] w-[190px] object-cover object-left"
 									transition:fly={{
@@ -77,7 +77,7 @@
 						<div class="hidden xl:block absolute top-[47%] flex left-[64%]">
 							{#if intersecting}
 								<img
-									src="/aboutUs/4.jpeg"
+									src="assets/img/aboutUs/4.jpeg"
 									alt="1"
 									class="h-[220px] w-[240px] object-cover object-right"
 									transition:fly={{

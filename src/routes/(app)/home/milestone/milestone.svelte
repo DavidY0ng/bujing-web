@@ -41,7 +41,7 @@
 	];
 </script>
 
-<div class="flex justify-center w-full bg-[url('/milestone/1.jpg')] dark:text-black bg-no-repeat bg-cover">
+<div class="flex justify-center w-full bg-[url('assets/img/milestone/1.jpg')] dark:text-black bg-no-repeat bg-cover">
 	<div class="py-20 md:max-w-[1400px] w-full">
 		<IntersectionObserver element={node} let:intersecting once>
 			<div bind:this={node}>

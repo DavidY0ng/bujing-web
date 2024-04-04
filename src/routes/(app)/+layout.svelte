@@ -8,10 +8,8 @@
 
     const scrollNavBar = 600
 	let show = false
-	// let shell: HTMLElement;
 
 	function onScroll(e) {
-        // console.log(e.target)
 		if (e.target.scrollTop > scrollNavBar) {
             show = true
         } else {

@@ -11,7 +11,6 @@
 	let imgSrc = [1, 2, 3, 4, 5, 6];
 	let isLargeScreen = '900px';
 
-	let wording = ['hello 1', 'hello 2', 'hello 3'];
 	let node: any;
 
 	const options = {
@@ -64,7 +63,7 @@
 											<div class="relative w-full">
 												<div class="absolute bottom-0 right-0 w-[60%] h-[60%] cursor-grab">
 													<img
-														src="/landingSection/{img}.jpeg"
+														src="/assets/img/landingSection/{img}.jpeg"
 														alt="Image {img}"
 														class="object-cover w-full h-full rounded-2xl"
 													/>
@@ -72,7 +71,7 @@
 
 												<div class="w-[60%] h-[60%] cursor-grab">
 													<img
-														src="/landingSection2/{img}.jpeg"
+														src="/assets/img/landingSection2/{img}.jpeg"
 														alt="Image {img}"
 														class="object-cover w-full h-full rounded-2xl"
 													/>
@@ -81,11 +80,6 @@
 										</SplideSlide>
 									{/each}
 								</SplideTrack>
-								<!-- <div class="mt-2 splide__progress">
-									<div class="splide__progress__bar">
-										
-									</div>
-								  </div> -->
 							</Splide>
 						</div>
 					{/if}
@@ -111,13 +105,3 @@
 		</div>
 	</div>
 </IntersectionObserver>
-
-<!-- <Splide aria-label="word carousel">
-								<SplideTrack>
-									<SplideSlide {options} hasTrack={false}>
-										{#each wording as word}
-											{word}
-										{/each}
-									</SplideSlide>
-								</SplideTrack>
-							</Splide> -->

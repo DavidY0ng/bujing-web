@@ -44,7 +44,7 @@
 								{#if expandedCardId === data.id}
 									<div class="card md:h-[400px] md:w-[500px] w-full rounded-3xl relative shadow-md h-[250px]">
 										<img
-											src="/pastActivity/{data.img}"
+											src="assets/img/pastActivity/{data.img}"
 											alt="img 1"
 											class="md:h-[400px] md:w-[500px] h-[250px] w-full rounded-3xl absolute object-cover"
 										/>
@@ -73,7 +73,7 @@
 										class="card md:h-[400px] md:w-[200px] w-full h-[100px] rounded-3xl relative shadow-md cursor-pointer"
 									>
 										<img
-											src="/pastActivity/{data.img}"
+											src="assets/img/pastActivity/{data.img}"
 											use:filter={'#Rustic'}
 											alt="img 1"
 											class="md:h-[400px] md:w-[200px] h-[100px] w-full rounded-3xl absolute opacity-30 object-cover"

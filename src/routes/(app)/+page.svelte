@@ -11,7 +11,7 @@
 	import Milestone from './home/milestone/milestone.svelte';
 	import AboutUs from './home/aboutUs/aboutUs.svelte'
 	import Partners from './home/partners/Partners.svelte';
-	import LandingSlide from './home/LandingSlide.svelte';
+	import LandingSlide from './home/landingSlide/LandingSlide.svelte';
 	import { fly } from 'svelte/transition';
 	import { scrollToSection } from '$lib/store/store'
 	import { browser } from '$app/environment';

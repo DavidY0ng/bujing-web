@@ -90,7 +90,7 @@
 												<div class="">
 													<div class="flex justify-center rounded-xl">
 														<img
-															src="/social/{img}.jpeg"
+															src="assets/img/social/{img}.jpeg"
 															alt="social {img}"
 															class="object-cover w-full md:h-[500px] h-[300px] rounded-xl"
 														/>
@@ -115,7 +115,7 @@
 									<div class="flex justify-center mb-5 text-xl font-bold">
 										<div class="h-full w-[200px] mr-5 items-center flex">
 											<div transition:fly={{ y: -80, duration: 1200, delay: 400 }}>
-												<img src="/logo/whale name.png" alt="bujing" class="w-full h-full" />
+												<img src="assets/img/logo/whale name.png" alt="bujing" class="w-full h-full" />
 											</div>
 										</div>
 									</div>
