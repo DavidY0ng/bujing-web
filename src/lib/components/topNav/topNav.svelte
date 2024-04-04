@@ -91,7 +91,7 @@
 						</a> -->
 
 						<a
-							href="#milestone"
+							href="/#milestone"
 							class="hover-underline-animation"
 							on:click|preventDefault={() => scrollToSectionHandler('milestone')}
 						>
@@ -99,7 +99,7 @@
 						</a>
 
 						<a
-							href="#partners"
+							href="/#partners"
 							class="hover-underline-animation"
 							on:click|preventDefault={() => scrollToSectionHandler('partners')}
 						>

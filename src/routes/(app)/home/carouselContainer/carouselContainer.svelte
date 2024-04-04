@@ -168,62 +168,6 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- sponsor -->
-							<!-- <div class="p-4 border border-secondary-800 rounded-2xl">
-                    <div class="mb-5 text-sm font-semibold text-gray-500">
-                        社交平台
-                    </div>
-        
-                    <div class="flex justify-around w-[200px]">
-                        <a href='https://t.me/bujingpublic' target='blank'>
-                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-                                <Icon icon="mingcute:telegram-fill" width="1.2em" height="1.2em" />
-                            </button>
-                        </a>
-                        
-                        
-                        <a href='https://twitter.com/bujingmalaysia' target='blank'>
-                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-                                <Icon icon="ri:twitter-x-fill" width="1.2em" height="1.2em" />
-                            </button>
-                        </a>
-                        
-                        <a href='https://www.facebook.com/groups/bujing' target='blank'>
-                            <button class="p-2 bg-gray-700 rounded-full hover:variant-filled-secondary">
-                                <Icon icon="ri:facebook-fill" width="1.2em" height="1.2em" />
-                            </button>
-                        </a>
-                        
-                    </div>
-                    <div class="flex items-center">
-                        <div class="h-[100px] w-[100px] mr-5 items-center flex">
-                            <img src='/logo/whale.png' alt='bujing' class="w-40 rounded-full h-35">
-                        </div>
-                        <div>
-                            <a href='#' class="anchor">BUJING</a>
-                            <span>
-                                - Empowered by BUJING society
-                            </span>
-                        </div>
-                    </div>
-                    <div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-1 ">
-                        <a class="logo-item variant-filled-secondary" href='https://t.me/bujingpublic' target='blank' >
-                            <span><Icon icon="mingcute:telegram-fill" width="1.9em" height="1.9em" /></span>
-                            <span>Skeleton</span>
-                        </a>
-                        <a class="logo-item variant-filled-secondary" href='https://twitter.com/bujingmalaysia' target='blank'>
-                            <span><Icon icon="ri:twitter-x-fill" width="1.9em" height="1.9em" /></span>
-                            <span>Skeleton</span>
-                        </a>
-            
-                        <a class="logo-item variant-filled-secondary"href='https://www.facebook.com/groups/bujing' target='blank'>
-                            <span><Icon icon="ri:facebook-fill" width="1.9em" height="1.9em" /></span>
-                            <span>Skeleton</span>
-                        </a>
-                      
-                    </div>
-                </div> -->
 						</div>
 					</div>
 				</div>
