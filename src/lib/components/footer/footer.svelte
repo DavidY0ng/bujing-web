@@ -33,7 +33,7 @@
     </div>
     
     <div class="text-center text-gray-600">
-        © 2024 BUJING. All rights reserved
+        © 2024 BUJING.CLUB All rights reserved
     </div>
     
 </div>

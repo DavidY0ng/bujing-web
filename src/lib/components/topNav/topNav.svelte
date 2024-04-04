@@ -81,7 +81,7 @@
                             </div>
                             <input type="search" placeholder="Search" class="p-1" />
                         </div> -->
-					<div class="flex justify-between md:w-[150px] gap-5 h3 font-bold">
+					<div class="flex justify-between md:w-[150px] gap-5 h4 font-bold">
 						<!-- <a
 							href="#past-events"
 							class="hover-underline-animation"
