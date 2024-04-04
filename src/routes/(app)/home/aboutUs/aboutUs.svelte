@@ -33,7 +33,7 @@
 		src="assets/img/aboutUs/bg1.jpg"
 		use:filter={'#BlueNight'}
 		alt="bg"
-		class=" object-cover opacity-20 w-full md:h-[800px] h-[550px]"
+		class=" object-cover opacity-20 w-full md:h-[800px] h-[580px]"
 	/>
 
 	<div class="flex max-w-[1400px] w-full absolute">
